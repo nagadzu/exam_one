@@ -8,14 +8,14 @@ bot = telebot.TeleBot(TOKEN, parse_mode='HTML')
 def auto_hendler(message):
     text = message.text.lower()
     print(text)
-    vowels = 0
+    glasnie = 0
     for i in text:
         letter = i.lower()
         if letter == "a" or letter == "e" or \
                 letter == "i" or letter == "o" or \
                 letter == "u" or letter == "y":
-            vowels += 1
+            glasnie += 1
 
-    bot.send_message(message.from_user.id, f'Гласных слов в слове: {vowels}')
+    bot.send_message(message.from_user.id, f'Гласных слов в слове: {glasnie}')
 
 bot.infinity_polling()
