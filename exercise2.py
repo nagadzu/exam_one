@@ -1,13 +1,11 @@
-deposit = float(input('deposit: '))
-end_deposit = float(input('end_deposit: '))
-percent = float(input('percent: '))
-month = 0
+deposit = int(input('Введите сумму депозита :'))
+accumulated_deposit = int(input('Введите сумму накопления :'))
+percent_age = int(input('Введите годовую ставку в процентах :'))
 
-x = ((percent / 12) * deposit)
-x += deposit
+month=0
 
-while x < end_deposit:
-    x +=   ((percent / 12) * x)
-    month += 1
+while deposit < accumulated_deposit:
+    month=month+1
+    deposit = (deposit*(percent_age/100)/12)+deposit
 
-    print(month)
+print(f'Количество месяцев накопления нужной суммы :{month}')

@@ -7,9 +7,9 @@
 # 4
 # x = set(list((5, 6, 7))) #set
 # 5
-# a = {1: 1, 2: 4, 3: 9} x = a.get(4) #dict
+# a = {1: 1, 2: 4, 3: 9} x = a.get(4) #NoneType
 # 6
-# x = [].append('j') #dict
+# x = [].append('j') #NoneType
 # 7
 # for i in range(10): if i < 5: x = 'hello' else: x = 5 #int
 # 8
